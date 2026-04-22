@@ -13,12 +13,11 @@ Open `http://localhost:3000`.
 
 ## Netlify
 
-This project includes `netlify.toml` with the Netlify build settings:
+This project includes a `netlify.toml` file to automate deployment.
 
-```toml
-[build]
-  command = "npm run build"
-  publish = ".next"
-```
+1. Connect this repo to Netlify.
+2. The build settings will be automatically picked up:
+   - **Build Command**: `npm run build`
+   - **Publish Directory**: `.next`
 
-Deploy from Git on Netlify and use the repo defaults. Netlify supports modern Next.js through its OpenNext adapter, so no pinned Next plugin is needed.
+Netlify will automatically detect the Next.js framework and apply the appropriate runtime.
